@@ -1,7 +1,9 @@
+//set api in variable
 const API_KEY = "40e0c4b22a65e3e31c4d70b659d2b917"
 
+//Set all requests in one object and give api key in variable
 const requests = {
-    fetchTrending: `trending/all/week?api_key=${API_KEY}&language=en-US`,
+    fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
     fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
     fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
